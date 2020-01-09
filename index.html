@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random: Tribute</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--This is area below is for external links (i.e. CSS/JS/etc)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link href="https://fonts.googleapis.com/css?family=Arapey|Arima+Madurai|Cedarville+Cursive|Satisfy|Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <!--The area above this is for external links-->
+    </head>
+
+    <body>
+        <div  class="flex flex-wrap" id="main">
+            <div id="title">Joanna Nix</div>
+            
+            <div id="img-div">
+                <!--The img should be centered and responsive-->
+                <img id="image" src="https://images.unsplash.com/photo-1519930785042-b606094b364d?ixlib=rb-1.2.1&auto=format&fit=crop&w=989&q=80" alt="a black and white image of a women in african clothing">
+                
+                <div id ="img-caption">
+                    <p class="caption-text">
+                        She is a designer, innovator, creator, and speaker. From her 
+                        humble begins as a SEO assistant, she grew her experience working
+                        with leading professionals in her field. ETC..................
+                        
+                    </p>
+                </div>
+            </div>
+
+        <!--Each button in tribute-info will receive a Modal. OnClick, each section wil display content on the
+            person. For example, one button will be designated for Eduacation, another for Hobbies, and etc..-->
+
+            <div class="tribute-info">
+                <!--For all the <a href=""> tags add the id="tribute-link"-->
+                <button type="button" id="tribute-button" class=" btn btn-outline-dark" data-toggle="modal" data-target="#Data1">
+                     Education
+                </button>
+
+                <button type="button" id="tribute-button" class="btn btn-outline-dark" data-toggle="modal" data-target="#Data2">
+                    Hobbies 
+                </button>
+                <button type="button" id="tribute-button" class=" btn btn-outline-dark" data-toggle="modal" data-target="#Data3">
+                   Passions
+                </button>
+            </div>
+
+            <!--This is where the modals will be housed-->
+           
+            <!-- Modal 1 -->
+         <div class="modal fade" id="Data1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                ...
+                </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                 </div>
+            </div>
+        </div> 
+
+        <!--Modal 2-->
+        <div class="modal fade" id="Data2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                </div>
+            </div>          
+    
+        
+        <!--Modal 3-->
+        <div class="modal fade" id="Data3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                </div>
+            </div>          
+    
+        </div><!--Ending for the Tribute-info-->
+        
+    </body>
+
+</html>
